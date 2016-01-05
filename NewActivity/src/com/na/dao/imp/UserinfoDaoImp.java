@@ -95,7 +95,7 @@ public class UserinfoDaoImp implements UserinfoDao {
 	//查询SQL
 	@Override
 	public Object selectSql(String sql) {
-		List list = null;
+		List<Userinfo> list = null;
 		try {
 			Session session = sessionFactory.getCurrentSession();
 			SQLQuery query =  session.createSQLQuery(sql);
@@ -113,6 +113,38 @@ public class UserinfoDaoImp implements UserinfoDao {
 		Session session = sessionFactory.getCurrentSession();
 		Userinfo userinfo = (Userinfo) session.get(Userinfo.class, uid);
 		return userinfo;
+	}
+
+	//执行无查询HQL语句
+	@Override
+	public boolean otherHql(String hql) {
+		try {
+			Session session = sessionFactory.getCurrentSession();
+			Query query = session.createQuery(hql);
+			if (query.executeUpdate()!=0) {
+				return true;
+			}
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		return false;
+	}
+
+	//执行无查询SQL语句
+	@Override
+	public boolean otherSql(String sql) {
+		try {
+			Session session = sessionFactory.getCurrentSession();
+			SQLQuery query = session.createSQLQuery(sql);
+			if (query.executeUpdate()!=0) {
+				return true;
+			}
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		return false;
 	}
 
 }
