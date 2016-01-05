@@ -35,4 +35,10 @@ public class VoteDetailDaoImp implements VotedetailDao {
 		return null;
 	}
 
+	@Override
+	public VoteDetail getVoteDetail(long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

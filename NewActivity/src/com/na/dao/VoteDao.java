@@ -9,4 +9,5 @@ public interface VoteDao {
 	public boolean delete(Vote vote);
 	public Object selectHql(String hql);
 	public Object selectSql(String sql);
+	public Vote getVote(long id);
 }

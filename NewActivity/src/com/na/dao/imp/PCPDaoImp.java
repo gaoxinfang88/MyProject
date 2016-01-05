@@ -35,4 +35,10 @@ public class PCPDaoImp implements PCPDao {
 		return null;
 	}
 
+	@Override
+	public PCP getPcp(long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

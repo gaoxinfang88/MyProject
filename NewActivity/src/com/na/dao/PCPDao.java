@@ -9,4 +9,5 @@ public interface PCPDao {
 	public boolean delete(PCP pcp);
 	public Object selectHql(String hql);
 	public Object selectSql(String sql);
+	public PCP getPcp(long id);
 }

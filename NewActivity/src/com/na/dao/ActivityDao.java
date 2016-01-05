@@ -8,4 +8,5 @@ public interface ActivityDao {
 	public boolean delete(Activity activity);
 	public Object selectHql(String hql);
 	public Object selectSql(String sql);
+	public Activity getActivity(long id);
 }

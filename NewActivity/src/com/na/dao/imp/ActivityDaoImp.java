@@ -35,4 +35,10 @@ public class ActivityDaoImp implements ActivityDao {
 		return null;
 	}
 
+	@Override
+	public Activity getActivity(long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

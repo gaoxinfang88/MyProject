@@ -35,4 +35,10 @@ public class ImageDaoImp implements ImageDao {
 		return null;
 	}
 
+	@Override
+	public Image getImage(long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

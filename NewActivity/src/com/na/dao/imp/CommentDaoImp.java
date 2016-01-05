@@ -35,4 +35,10 @@ public class CommentDaoImp implements CommentDao {
 		return null;
 	}
 
+	@Override
+	public Comment getComment(long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

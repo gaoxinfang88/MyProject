@@ -8,4 +8,5 @@ public interface UserinfoDao {
 	public boolean delete(Userinfo userinfo);
 	public Object selectHql(String hql);
 	public Object selectSql(String sql);
+	public Userinfo getUserinfo(long uid);
 }
